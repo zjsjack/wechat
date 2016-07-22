@@ -57,15 +57,14 @@ public class wechatServlet extends HttpServlet {
 		} else {
 			// 正常的微信处理流程
 			result = new wechatProcess().processWechatMag(xml);
-		}
-
-		try {
-			OutputStream os = response.getOutputStream();
-			os.write(result.getBytes("UTF-8"));
-			os.flush();
-			os.close();
-		} catch (Exception e) {
-			e.printStackTrace();
+			try {
+				OutputStream os = response.getOutputStream();
+				os.write(result.getBytes("UTF-8"));
+				os.flush();
+				os.close();
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
 		}
 	}
 
