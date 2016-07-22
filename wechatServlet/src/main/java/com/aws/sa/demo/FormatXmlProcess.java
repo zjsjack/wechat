@@ -1,11 +1,7 @@
 package com.aws.sa.demo;
 
 import java.util.Date;  
-/** 
- * 封装最终的xml格式结果 
- * @author pamchen-1 
- * 
- */  
+
 public class FormatXmlProcess {  
     /** 
      * 封装文字类的返回消息 

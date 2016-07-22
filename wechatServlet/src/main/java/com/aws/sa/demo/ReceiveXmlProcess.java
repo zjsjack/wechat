@@ -7,11 +7,7 @@ import java.util.Iterator;
 import org.dom4j.Document;  
 import org.dom4j.DocumentHelper;  
 import org.dom4j.Element;  
-/** 
- * 解析接收到的微信xml，返回消息对象 
- * @author pamchen-1 
- * 
- */  
+
 public class ReceiveXmlProcess {  
     /** 
      * 解析微信xml消息 
@@ -35,7 +31,7 @@ public class ReceiveXmlProcess {
             msg = new ReceiveXmlEntity();  
             //利用反射机制，调用set方法  
             //获取该实体的元类型  
-            Class<?> c = Class.forName("demo.aws.sa.demo.ReceiveXmlEntity");  
+            Class<?> c = Class.forName("com.aws.sa.demo.ReceiveXmlEntity");  
             msg = (ReceiveXmlEntity)c.newInstance();//创建这个实体的对象  
               
             while(iter.hasNext()){  
