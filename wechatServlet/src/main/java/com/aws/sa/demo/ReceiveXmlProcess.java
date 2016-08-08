@@ -4,8 +4,8 @@ import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.util.Iterator;
 
-import org.dom4j.Document;  
-import org.dom4j.DocumentHelper;  
+import org.dom4j.Document;
+import org.dom4j.DocumentHelper;
 import org.dom4j.Element;  
 
 public class ReceiveXmlProcess {  

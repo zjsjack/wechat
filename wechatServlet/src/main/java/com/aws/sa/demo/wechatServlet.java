@@ -24,6 +24,21 @@ public class wechatServlet extends HttpServlet {
 	 */
 	private static final long serialVersionUID = -1508630456991652975L;
 	private String Token = "mk151020";
+	
+	
+
+	@Override
+	public void destroy() {
+		// TODO Auto-generated method stub
+		super.destroy();
+	}
+
+	@Override
+	public void init() throws ServletException {
+		// TODO Auto-generated method stub
+		super.init();
+		
+	}
 
 	@Override	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
