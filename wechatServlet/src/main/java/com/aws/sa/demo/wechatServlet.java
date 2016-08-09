@@ -23,7 +23,7 @@ public class wechatServlet extends HttpServlet {
 	 * 
 	 */
 	private static final long serialVersionUID = -1508630456991652975L;
-	private String Token = "888888888";
+	private String Token = "888888";
 	
 	
 
